@@ -20,8 +20,8 @@ RUN set -x \
 COPY package*.json ./
 
 # Install the dependencies
-RUN npm ci --only=production --ignore-scripts
-
+#RUN npm ci --only=production --ignore-scripts
+RUN npm install
 # Copy the rest of the source code to the working directory
 COPY . .
 
